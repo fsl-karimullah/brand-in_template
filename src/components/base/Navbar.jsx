@@ -7,6 +7,7 @@ import { IoIosCloseCircleOutline } from "react-icons/io";
 
 const Navbar = () => {
   const [navbarIsOpen, setNavbarIsOpen] = useState(false);
+  const [navbarScroll, setNavbarScroll] = useState(false);
   const hamburgerRef = useRef(null);
   const menurRef = useRef(null);
 
@@ -23,16 +24,16 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="relative flex w-full items-center justify-between border p-4 md:px-10 lg:px-[120px]">
+    <nav className="sticky top-0 z-50 flex w-full items-center justify-between border bg-white p-4 md:px-10 lg:px-[120px]">
       <div className="flex items-center gap-2 md:w-3/12">
-        <img src={Logo} alt="logo" className="size-8" />
-        <h3 className="font-bold">Bistro Bliss</h3>
+        <img src={Logo} alt="logo" className="size-8 lg:size-[55px]" />
+        <h3 className="font-playFair font-semibold italic text-secondary lg:text-[42px]">Bistro Bliss</h3>
       </div>
-      <div className={`fixed top-0 h-screen bg-white p-8 shadow-md transition-all duration-300 md:static md:flex md:h-fit md:w-9/12 md:items-center md:justify-between md:p-0 md:shadow-none ${navbarIsOpen ? "right-0" : "-right-full"}`} ref={menurRef}>
+      <div className={`fixed top-0 h-screen bg-white p-8 shadow-md transition-all duration-300 md:static md:flex md:h-fit md:w-9/12 md:items-center md:justify-between md:p-0 md:shadow-none lg:w-8/12 ${navbarIsOpen ? "right-0" : "-right-full"}`} ref={menurRef}>
         <div className="text-right" onClick={() => setNavbarIsOpen(false)}>
           <IoIosCloseCircleOutline className="ms-auto md:hidden" />
         </div>
-        <ul className="text-paragraph2 flex flex-col gap-4 md:flex-row">
+        <ul className="text-paragraph2 flex flex-col gap-4 font-medium text-tertary md:flex-row lg:me-auto lg:gap-8">
           <li>
             <NavLink to={"/"}>Home</NavLink>
           </li>
