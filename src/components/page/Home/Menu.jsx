@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Menu = () => {
   return (
     <section className="p-8 md:px-10 lg:px-[120px] lg:py-14">
-      <h2 className="mb-8 text-center text-2xl font-medium lg:text-5xl">Browse Our Menu</h2>
+      <h2 className="lg:text-h2 mb-8 text-center text-2xl font-medium">Browse Our Menu</h2>
       <div className="grid grid-cols-1 gap-4 px-8 md:grid-cols-2 lg:grid-cols-4 lg:gap-5">
         {listMenu.map((item) => {
           const Icon = item.icon;

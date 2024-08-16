@@ -9,3 +9,7 @@
 * {
   font-family: "DM Sans", sans-serif;
 }
+
+.active {
+  @apply rounded-full bg-[#DBDFD0] px-4 py-1;
+}
