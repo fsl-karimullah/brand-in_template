@@ -5,6 +5,9 @@ import Footer from "../components/base/Footer";
 import Menu from "../components/page/Home/Menu";
 import CtaAboutUs from "../components/page/Home/CtaAboutUs";
 import Service from "../components/page/Home/Service";
+import Delivery from "../components/page/Home/Delivery";
+import Testimonial from "../components/page/Home/Testimonial";
+import BlogAndArticle from "../components/page/Home/BlogAndArticle";
 
 const HomePage = () => {
   return (
@@ -14,6 +17,9 @@ const HomePage = () => {
       <Menu />
       <CtaAboutUs />
       <Service />
+      <Delivery />
+      <Testimonial />
+      <BlogAndArticle />
       <Footer />
     </>
   );

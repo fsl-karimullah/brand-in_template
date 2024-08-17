@@ -44,7 +44,7 @@ const Navbar = () => {
             <NavLink to={"/menu"}>Menu</NavLink>
           </li>
           <li>
-            <NavLink to={"/book"}>Pages</NavLink>
+            <NavLink to={"/blog"}>Pages</NavLink>
           </li>
           <li>
             <NavLink to={"/contact"}>Contact</NavLink>

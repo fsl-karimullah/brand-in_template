@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Menu = () => {
   return (
     <section className="p-8 md:px-10 lg:px-[120px] lg:py-32">
-      <h2 className="lg:text-h2 font-playFair mb-8 text-center text-2xl font-medium">Browse Our Menu</h2>
+      <h2 className="mb-8 text-center font-playFair text-2xl font-medium lg:text-h2">Browse Our Menu</h2>
       <div className="grid grid-cols-1 gap-4 px-8 md:grid-cols-2 lg:grid-cols-4 lg:gap-5">
         {listMenu.map((item) => {
           const Icon = item.icon;
@@ -15,7 +15,7 @@ const Menu = () => {
               <div className="flex size-14 items-center justify-center rounded-full bg-[#DBDFD0] lg:size-[100px]">
                 <Icon className="text-2xl text-secondary lg:text-5xl" />
               </div>
-              <h3 className="lg:text-h3 text-lg font-bold text-tertary">{item.title}</h3>
+              <h3 className="text-lg font-bold text-tertary lg:text-h3">{item.title}</h3>
               <p className="text-center text-sm lg:text-base">{item.desc}</p>
               <Link to={"/"} className="text-base font-bold text-primary">
                 Explore Menu
