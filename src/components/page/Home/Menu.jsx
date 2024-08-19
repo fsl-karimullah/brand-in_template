@@ -1,6 +1,5 @@
 import React from "react";
 import { listMenu } from "../../data/Home/menu";
-import { LuCupSoda } from "react-icons/lu";
 import { Link } from "react-router-dom";
 
 const Menu = () => {

@@ -24,7 +24,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="sticky top-0 z-50 flex w-full items-center justify-between border bg-white p-4 md:px-10 lg:px-[120px]">
+    <nav className="sticky top-0 z-50 flex w-full items-center justify-between bg-white p-4 md:px-10 lg:px-[120px]">
       <div className="flex items-center gap-2 md:w-3/12">
         <img src={Logo} alt="logo" className="size-8 lg:size-[55px]" />
         <h3 className="font-playFair font-semibold italic text-secondary lg:text-[42px]">Bistro Bliss</h3>
@@ -33,7 +33,7 @@ const Navbar = () => {
         <div className="text-right" onClick={() => setNavbarIsOpen(false)}>
           <IoIosCloseCircleOutline className="ms-auto md:hidden" />
         </div>
-        <ul className="text-paragraph2 flex flex-col gap-4 font-medium text-tertary md:flex-row lg:me-auto lg:gap-8">
+        <ul className="mb-4 flex flex-col gap-4 text-paragraph2 font-medium text-tertary md:mb-0 md:flex-row lg:me-auto lg:gap-8">
           <li>
             <NavLink to={"/"}>Home</NavLink>
           </li>
