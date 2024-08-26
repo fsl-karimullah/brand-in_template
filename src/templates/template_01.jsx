@@ -7,6 +7,8 @@ import AboutPage from "../page/AboutPage";
 import MenuPage from "../page/MenuPage";
 import BlogPage from "../page/BlogPage";
 import ContactPage from "../page/ContactPage";
+import BookPage from "../page/BookPage";
+import BlogDetailsPage from "../page/BlogDetailsPage";
 
 const Template_01 = () => {
   return (
@@ -16,7 +18,9 @@ const Template_01 = () => {
         <Route path="/about" element={<AboutPage />}></Route>
         <Route path="/menu" element={<MenuPage />}></Route>
         <Route path="/blog" element={<BlogPage />}></Route>
+        <Route path="/blog/details" element={<BlogDetailsPage />} />
         <Route path="/contact" element={<ContactPage />}></Route>
+        <Route path="/book" element={<BookPage />}></Route>
         <Route path="*" element={<NotFound />}></Route>
       </Routes>
       <ScrollToTopButton />

@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { IoIosMenu } from "react-icons/io";
 import Logo from "../../assets/Home/logo.png";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { ButtonSmall } from "./Button";
 import { IoIosCloseCircleOutline } from "react-icons/io";
 
@@ -50,7 +50,9 @@ const Navbar = () => {
             <NavLink to={"/contact"}>Contact</NavLink>
           </li>
         </ul>
-        <ButtonSmall style={"outline"}>Book A Table</ButtonSmall>
+        <Link to={"/book"}>
+          <ButtonSmall style={"outline"}>Book A Table</ButtonSmall>
+        </Link>
       </div>
       <div className="md:hidden" onClick={() => setNavbarIsOpen(true)} ref={hamburgerRef}>
         <IoIosMenu className="size-8" />

@@ -1,16 +1,16 @@
 import React from "react";
 import Navbar from "../components/base/Navbar";
 import Footer from "../components/base/Footer";
-import Contact from "../components/page/Contact/Contact";
+import BlogDetails from "../components/page/BlogDetails/BlogDetails";
 
-const ContactPage = () => {
+const BlogDetailsPage = () => {
   return (
     <>
       <Navbar />
-      <Contact />
+      <BlogDetails />
       <Footer />
     </>
   );
 };
 
-export default ContactPage;
+export default BlogDetailsPage;

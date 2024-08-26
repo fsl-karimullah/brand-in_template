@@ -1,16 +1,16 @@
 import React from "react";
 import Navbar from "../components/base/Navbar";
 import Footer from "../components/base/Footer";
-import Contact from "../components/page/Contact/Contact";
+import BookATable from "../components/page/Book/BookATable";
 
-const ContactPage = () => {
+const BookPage = () => {
   return (
     <>
       <Navbar />
-      <Contact />
+      <BookATable />
       <Footer />
     </>
   );
 };
 
-export default ContactPage;
+export default BookPage;

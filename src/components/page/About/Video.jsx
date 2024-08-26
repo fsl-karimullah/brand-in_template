@@ -11,10 +11,10 @@ const Video = () => {
         <IoMdPlayCircle className="text-4xl md:text-[108px]" />
         <h2 className="max-w-64 text-center font-[playFair] text-xl font-medium md:max-w-96 md:text-4xl lg:max-w-xl lg:text-h2">Feel the authentic & original taste from us</h2>
       </div>
-      <div className="flex flex-col justify-center gap-4 bg-white p-2 md:flex-row md:px-4 md:py-12 lg:py-20">
+      <div className="mt-6 flex flex-col justify-between gap-4 bg-white px-4 md:mt-0 md:flex-row md:px-4 md:py-12 lg:px-[120px] lg:py-20">
         {listVideo.map((item) => {
           return (
-            <div key={item.id} className="flex items-start gap-1 md:gap-2 lg:gap-6">
+            <div key={item.id} className="flex items-start gap-2 lg:gap-6">
               <div>
                 <img src={item.icon} alt={item.title} className="size-8 lg:size-12" />
               </div>

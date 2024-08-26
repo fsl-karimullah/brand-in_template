@@ -7,7 +7,7 @@ import Button from "../../base/Button";
 
 const CtaAboutUs = () => {
   return (
-    <section className="flex flex-col gap-4 bg-bgSecondary p-8 md:flex-row md:items-center md:px-10 lg:gap-36 lg:px-[120px] lg:py-32">
+    <section className="flex flex-col gap-4 bg-bgSecondary px-4 py-8 md:flex-row md:items-center md:px-10 lg:gap-36 lg:px-[120px] lg:py-32">
       <div className="relative md:w-1/2 lg:h-[566px] lg:w-[599px]">
         <img src={CtaImg} alt="cta img" className="rounded-xl md:w-full" />
         <div className="absolute -bottom-12 -right-20 hidden w-[411px] rounded-xl bg-secondary p-4 text-white lg:block lg:p-12">

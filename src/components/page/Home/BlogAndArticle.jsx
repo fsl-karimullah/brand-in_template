@@ -6,7 +6,7 @@ import { listBlog } from "../../data/Home/blogAndArticle";
 
 const BlogAndArticle = () => {
   return (
-    <section className="bg-bgSecondary p-8 md:px-10 lg:px-[120px] lg:py-32">
+    <section className="bg-bgSecondary px-4 py-8 md:px-10 lg:px-[120px] lg:py-32">
       <div className="mb-8 flex flex-col items-center justify-between gap-4 md:mb-12 lg:mb-16 lg:flex-row">
         <h2 className="font-playFair text-2xl font-medium md:text-3xl lg:text-h2">Our Blog & Articles</h2>
         <Button>Read All Article</Button>

@@ -7,7 +7,7 @@ import Img from "../../../assets/About/hero1.png";
 
 const Hero = () => {
   return (
-    <section className="flex flex-col gap-4 p-8 md:flex-row md:items-center md:px-10 lg:gap-36 lg:px-[120px] lg:pb-32 lg:pt-20">
+    <section className="flex flex-col gap-4 bg-bgSecondary px-4 py-8 md:flex-row md:items-center md:px-10 lg:gap-36 lg:px-[120px] lg:pb-32 lg:pt-20">
       <div className="relative md:w-1/2 lg:h-[566px] lg:w-[599px]">
         <img src={Img} alt="hero img" className="rounded-xl md:w-full" />
         <div className="absolute -bottom-12 -right-20 hidden w-[411px] rounded-xl bg-secondary p-4 text-white lg:block lg:p-12">

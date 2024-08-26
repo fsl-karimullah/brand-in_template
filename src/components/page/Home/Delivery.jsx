@@ -6,7 +6,7 @@ import Delivery3 from "../../../assets/Home/delivery3.png";
 
 const Delivery = () => {
   return (
-    <section className="flex flex-col gap-8 bg-bgSecondary p-8 md:flex-row md:px-10 lg:items-center lg:justify-center lg:px-[120px] lg:py-32">
+    <section className="flex flex-col gap-8 bg-bgSecondary px-4 py-8 md:flex-row md:px-10 lg:items-center lg:justify-center lg:px-[120px] lg:py-32">
       <div className="flex w-full gap-2 lg:gap-6">
         <div>
           <img src={Delivery1} alt="delivery img" />
